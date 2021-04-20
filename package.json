@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Node Server Testing Challenge",
   "scripts": {
-    "test": "jest --watch"
-  },
-  "jest": {
-    "testEnvironment": "node"
+    "test": "jest --watch --verbose",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +12,8 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "cross-env": "^7.0.3",
     "eslint": "^7.13.0",
     "jest": "^26.6.3",
     "supertest": "^6.0.1"
